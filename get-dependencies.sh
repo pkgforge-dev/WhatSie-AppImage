@@ -20,6 +20,7 @@ get-debloated-pkgs --add-common --prefer-nano
 
 # If the application needs to be manually built that has to be done down here
 if [ "${DEVEL_RELEASE-}" = 1 ]; then
+	make-aur-package update-notifier-qt
 	package=whatsie-git
 else
 	package=whatsie
