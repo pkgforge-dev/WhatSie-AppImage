@@ -11,9 +11,9 @@
 </p>
 
 
-| Latest Stable Release | Upstream URL |
-| :---: | :---: |
-| [Click here](https://github.com/pkgforge-dev/WhatSie-AppImage/releases/latest) | [Click here](https://github.com/keshavbhatt/whatsie) |
+| Latest Stable Release | Latest Nightly Release | Upstream URL |
+| :---: | :---: | :---: |
+| [Click here](https://github.com/pkgforge-dev/WhatSie-AppImage/releases/latest) | [Click here](https://github.com/pkgforge-dev/WhatSie-AppImage/releases/tag/nightly) | [Click here](https://github.com/keshavbhatt/whatsie) |
 
 </div>
 
