@@ -7,12 +7,15 @@ ARCH=$(uname -m)
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
-	cmake		   \
-	kvantum 	   \
-	lxqt-qtplugin  \
-    pipewire-audio \
-    pipewire-jack  \
-	qt6-declarative qt6-location qt6-webchannel qt6-webengine \
+	cmake		    \
+	kvantum 	    \
+	lxqt-qtplugin   \
+    pipewire-audio  \
+    pipewire-jack   \
+	qt6-declarative \
+	qt6-location    \
+	qt6-webchannel  \
+	qt6-webengine   \
 	qt6ct
 
 echo "Installing debloated packages..."
