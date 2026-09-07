@@ -46,7 +46,7 @@ else
 fi
 echo "$VERSION" > ~/version
 
-mkdir -p ./AppDir/bin
+cd ./whatsie
 cmake -S ./ \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX="/usr" \
