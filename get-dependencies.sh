@@ -12,7 +12,7 @@ pacman -Syu --noconfirm \
 	lxqt-qtplugin  \
     pipewire-audio \
     pipewire-jack  \
-	qt6-declarative qt6-location qt6-webchannel qt6-webengine
+	qt6-declarative qt6-location qt6-webchannel qt6-webengine \
 	qt6ct
 
 echo "Installing debloated packages..."
