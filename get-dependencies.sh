@@ -37,8 +37,7 @@ else
 fi
 echo "$VERSION" > ~/version
 
-cd ./whatsie
-cmake ./ \
+cmake -S ./whatsie \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX="/usr" \
     -Bbuild
