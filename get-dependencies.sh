@@ -29,11 +29,11 @@ if [ "${DEVEL_RELEASE-}" = 1 ]; then
     echo "Making nightly build of WhatSie..."
     echo "---------------------------------------------------------------"
     VERSION="$(git ls-remote "$REPO" HEAD | cut -c 1-9 | head -1)"
-    git clone "$REPO" ./whatsie
+    git clone --depth 1 "$REPO" ./whatsie
 else
 	echo "Making stable build of WhatSie..."
 	VERSION="$(git ls-remote --tags --sort="v:refname" "$REPO" | tail -n1 | sed 's/.*\///; s/\^{}//; s/^v//')"
-	git clone --branch v"$VERSION" --single-branch "$REPO" ./whatsie
+	git clone --branch v"$VERSION" --single-branch --depth 1 "$REPO" ./whatsie
 fi
 echo "$VERSION" > ~/version
 
