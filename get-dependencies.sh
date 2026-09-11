@@ -37,9 +37,6 @@ else
 fi
 echo "$VERSION" > ~/version
 
-cmake -S ./whatsie \
-    -DCMAKE_BUILD_TYPE=Release \
-    -DCMAKE_INSTALL_PREFIX="/usr" \
-    -B build
+cmake -S ./whatsie -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="/usr" -B build
 cmake --build build -j$(nproc)
 cmake --install build
